@@ -5,16 +5,19 @@ import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
 import android.os.Bundle;
+import android.widget.ImageView;
 
 import java.util.ArrayList;
 import java.util.List;
+
+import info.androidhive.fontawesome.FontDrawable;
 
 public class MainActivity extends AppCompatActivity {
 
     private RecyclerView rvInstaContent;
     private RecyclerView rvInstaTop;
     private InstaContentAdapter instaContentAdapter;
-    private  InstaTopAdapter instaTopAdapter;
+    private InstaTopAdapter instaTopAdapter;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {

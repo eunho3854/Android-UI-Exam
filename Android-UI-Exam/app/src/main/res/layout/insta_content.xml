@@ -5,7 +5,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:orientation="vertical"
     android:layout_width="match_parent"
-    android:layout_height="580dp">
+    android:layout_height="600dp">
 
     <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="match_parent"
@@ -70,47 +70,57 @@
     </androidx.constraintlayout.widget.ConstraintLayout>
 
     <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_marginTop="5dp"
         android:layout_width="match_parent"
         android:layout_height="220dp"
         app:layout_constraintTop_toBottomOf="parent">
 
-        <ImageView
+        <info.androidhive.fontawesome.FontTextView
             android:id="@+id/iv_turn"
-            android:layout_width="34dp"
-            android:layout_height="34dp"
-            android:layout_marginTop="8dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
             android:layout_marginEnd="8dp"
+            android:text="@string/fa_bookmark"
+            android:textColor="@android:color/darker_gray"
+            android:textSize="30dp"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintTop_toTopOf="parent"
-            app:srcCompat="@drawable/ic_turned" />
+            app:layout_constraintTop_toTopOf="parent" />
 
-        <ImageView
+
+        <info.androidhive.fontawesome.FontTextView
             android:id="@+id/iv_send"
-            android:layout_width="34dp"
-            android:layout_height="34dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
             android:layout_marginStart="8dp"
+            android:text="@string/fa_paper_plane"
+            android:textColor="@android:color/darker_gray"
+            android:textSize="30dp"
             app:layout_constraintStart_toEndOf="@+id/iv_comment"
-            app:layout_constraintTop_toTopOf="@+id/iv_comment"
-            app:srcCompat="@drawable/ic_send" />
+            app:layout_constraintTop_toTopOf="@+id/iv_comment" />
 
-        <ImageView
+        <info.androidhive.fontawesome.FontTextView
             android:id="@+id/iv_comment"
-            android:layout_width="34dp"
-            android:layout_height="34dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
             android:layout_marginStart="8dp"
+            android:text="@string/fa_comment"
+            android:textColor="@android:color/darker_gray"
+            android:textSize="30dp"
             app:layout_constraintStart_toEndOf="@+id/iv_fav"
-            app:layout_constraintTop_toTopOf="@+id/iv_fav"
-            app:srcCompat="@drawable/ic_comment" />
+            app:layout_constraintTop_toTopOf="@+id/iv_fav" />
 
-        <ImageView
+        <info.androidhive.fontawesome.FontTextView
             android:id="@+id/iv_fav"
-            android:layout_width="34dp"
-            android:layout_height="34dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
             android:layout_marginStart="8dp"
-            android:layout_marginTop="8dp"
+            android:text="@string/fa_heart"
+            android:textColor="@android:color/darker_gray"
+            android:textSize="30dp"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent"
-            app:srcCompat="@drawable/ic_favorite" />
+            app:layout_constraintTop_toTopOf="parent" />
+
+
 
         <de.hdodenhof.circleimageview.CircleImageView
             android:id="@+id/iv_content_profile_image"
@@ -269,13 +279,8 @@
             app:layout_constraintStart_toEndOf="@+id/iv_content_reply_image"
             app:layout_constraintTop_toTopOf="@+id/guideline4" />
 
-        <View
-            android:layout_width="match_parent"
-            android:layout_height="2dp"
-            android:background="@android:color/black"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintTop_toBottomOf="parent" />
     </androidx.constraintlayout.widget.ConstraintLayout>
+
 
 </LinearLayout>
 
